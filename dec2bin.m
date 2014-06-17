@@ -1,4 +1,4 @@
-function bin = decTbin(dec)
+function bin = dec2bin(dec)
 
     buff = zeros(1, 20);
     count = 1;
@@ -9,5 +9,7 @@ function bin = decTbin(dec)
         count       = count + 1;
     end
     
-    bin = (buff(1:count-1))';
+    bin = (buff(count-1:-1:1));
+    
+end
     

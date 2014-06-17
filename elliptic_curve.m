@@ -1,4 +1,6 @@
-function R = elliptic_curve(P, Q, a, b, p)
+function R = elliptic_curve(P, Q, a, p)
+
+% R = P + Q in elliptic curve over p with coefficient of x is a.
 
 x1 = P(1); y1 = P(2);
 x2 = Q(1); y2 = Q(2);

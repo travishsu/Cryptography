@@ -22,8 +22,12 @@ function d = inverse_mod(e, p)
     end
     
     d = e;
-    for i = 2:p-2
-        d = mod(d*e, p);
+    p_minus2_bin = dec2bin(p-2);
+    for i = 2:size(p_minus2_bin, 2)
+        d = mod(d*d, p);
+        if p_minus2_bin(i)
+            d = mod(d*e, p);
+        end
     end
     %d = mod(e^(p-2), p);
 end

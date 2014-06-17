@@ -21,3 +21,5 @@ function list = prime_exponent(n)
             list(idx, 1) = a(i);
         end
     end
+    
+end

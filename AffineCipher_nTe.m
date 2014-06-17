@@ -56,4 +56,4 @@ function AffineCipher_nTe(n)
             fprintf('z');
     end
         
-        
+end
